@@ -14,4 +14,9 @@ public class TriangleCheckerTest {
     public void checkFalseTest(){
         Assert.assertFalse(TriangleChecker.check(1, 1, 2));
     }
+
+    @Test
+    public void shouldFailTest(){
+        Assert.fail();
+    }
 }
