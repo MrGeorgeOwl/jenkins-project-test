@@ -5,9 +5,9 @@ public class TriangleChecker {
         System.out.println("Hello i am TriangleChecker");
     }
 
-    public static boolean check(double a, double b, double c){
-        if ( a > 0 && b > 0 && c > 0){
-            return a + b > c && a + c > b && b + c > a;
+    public static boolean check(double[] sides){
+        if ( sides[0] > 0 && sides[1] > 0 && sides[2] > 0){
+            return sides[0] + sides[1] > sides[2] && sides[0] + sides[2] > sides[1] && sides[1] + sides[2] > sides[0];
         }
         else{
             return false;
