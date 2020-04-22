@@ -68,10 +68,11 @@
             <formats>
               <format>xml</format>
             </formats>
+            <argLine>-XX:-UseSplitVerifier</argLine>
           </configuration>
           <executions>
             <execution>
-              <phase>package</phase>
+              <phase>test</phase>
               <goals>
                 <goal>cobertura</goal>
               </goals>
